@@ -1,6 +1,7 @@
 import axios from "axios";
 import { useEffect, useState } from "react";
 import { Divider, Button, Space } from "antd";
+import AssetInfo from "./AssetInfo";
 
 export default function AssetDisplay() {
   const [agents, setAgents] = useState([]);
@@ -31,6 +32,7 @@ export default function AssetDisplay() {
           {agents[agentIndex]?.login.username.toUpperCase()}
         </p>
       </div>
+      <AssetInfo />
       <Space wrap>
         <Button type="primary" className="button">
           Next Asset
