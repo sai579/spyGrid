@@ -25,7 +25,23 @@
   margin-left: 0rem;
 }
 
-/* //bg-blue-500 hover:bg-blue-700 text-white font-mono py-1 px-3 rounded button */
 .button {
   font-family: monospace;
+}
+
+.assetInfo {
+  text-transform: capitalize;
+  margin-left: 24.5rem;
+  margin-right: 20rem;
+  padding-left: 8px;
+  column-count: 2;
+  column-gap: 0.5rem;
+  font-weight: bold;
+  font-family: monospace;
+  text-align: left;
+  font-size: 20px;
+}
+
+li {
+  list-style: none;
 }

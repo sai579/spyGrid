@@ -32,7 +32,7 @@ export default function AssetDisplay() {
           {agents[agentIndex]?.login.username.toUpperCase()}
         </p>
       </div>
-      <AssetInfo />
+      <AssetInfo currentAgent={agents[agentIndex]} />
       <Space wrap>
         <Button type="primary" className="button">
           Next Asset
