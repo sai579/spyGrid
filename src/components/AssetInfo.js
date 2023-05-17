@@ -1,3 +1,5 @@
+import React from "react";
+
 export default function AssetInfo({ currentAgent }) {
   const agentEyeColor = ["black", "brown", "red", "green", "blue"];
   return (

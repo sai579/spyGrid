@@ -1,6 +1,6 @@
 import axios from "axios";
 import { useEffect, useState } from "react";
-import { Divider, Button, Space } from "antd";
+import { Button, Space } from "antd";
 import AssetInfo from "./AssetInfo";
 import AssetLoginId from "./AssetLoginId";
 
@@ -31,9 +31,6 @@ export default function AssetDisplay() {
   return (
     <>
       <AssetLoginId assetLogin={agents[agentIndex]?.login.uuid} />
-      {/* <Divider orientation="left" className="header">
-        SPY GRID
-      </Divider> */}
       <h2>SPY GRID</h2>
       <div className="container">
         <img
