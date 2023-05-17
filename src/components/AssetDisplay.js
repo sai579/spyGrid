@@ -19,9 +19,17 @@ export default function AssetDisplay() {
       });
   }, []);
 
+  const handleNextAgentClick = () => {
+    let currentAgentIndex = agentIndex;
+    if (currentAgentIndex < agents.length) {
+      currentAgentIndex++;
+      setAgentIndex(currentAgentIndex);
+    }
+  };
+
   return (
     <>
-      <Divider orientation="left">ASSET</Divider>
+      <Divider orientation="left">SPY GRID</Divider>
       <div className="container">
         <img
           className="picture"
@@ -34,7 +42,12 @@ export default function AssetDisplay() {
       </div>
       <AssetInfo currentAgent={agents[agentIndex]} />
       <Space wrap>
-        <Button type="primary" className="button">
+        <Button
+          type="primary"
+          className="button site-button-ghost-wrapper"
+          onClick={handleNextAgentClick}
+          disabled={agentIndex === agents.length - 1}
+        >
           Next Asset
         </Button>
       </Space>
