@@ -3,48 +3,76 @@
   text-align: center;
 }
 
-.picture {
-  width: 800px;
-  height: 586px;
-  margin-left: 25rem;
-  border: 5px solid red;
+@media screen and (min-width: 601px) {
+  .picture {
+    width: 486px;
+    height: 486px;
+    margin-left: 25rem;
+    border: 5px solid red;
+  }
 }
 
 .imgGrid {
   display: grid;
 }
 
-.container {
-  align-content: center;
+@media screen and (min-width: 601px) {
+  .container {
+    align-content: center;
+  }
 }
 
-.assetCode {
-  text-align: center;
-  font-size: 35px;
-  font-family: monospace;
-  margin-left: 0rem;
+@media screen and (min-width: 601px) {
+  .assetCode {
+    text-align: center;
+    font-size: 30px;
+    font-family: monospace;
+    margin-right: 27%;
+  }
 }
 
-.button {
-  font-family: monospace;
-  margin-left: 70rem;
-  display: flex;
-  margin-top: 2rem;
+@media screen and (min-width: 601px) {
+  .button {
+    font-family: monospace;
+    margin-left: 70rem;
+    display: flex;
+    position: relative;
+  }
 }
 
 .assetInfo {
   text-transform: capitalize;
-  margin-left: 24.5rem;
-  margin-right: 20rem;
   padding-left: 8px;
-  column-count: 2;
-  column-gap: 0.5rem;
-  font-weight: bold;
   font-family: monospace;
-  text-align: left;
   font-size: 18px;
 }
 
 li {
   list-style: none;
+}
+
+.loginId {
+  width: 380px;
+  float: right;
+  padding: 20px;
+}
+
+.dark {
+  background-color: #333;
+  color: #fff;
+}
+
+/* If the screen size is 601px wide or more, set the font-size of <div> to 80px */
+@media screen and (min-width: 601px) {
+  li {
+    margin-left: 24%;
+  }
+}
+
+/* If the screen size is 600px wide or less, set the font-size of <div> to 30px */
+@media screen and (max-width: 600px) {
+  li {
+    margin-left: 0rem;
+    margin-right: 0rem;
+  }
 }
